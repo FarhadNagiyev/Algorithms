@@ -7,7 +7,7 @@ void printArray(int array[], int size);
 
 int main(void)
 {
-    int arr[] = {1, 2, 3, 3, 4};
+    int arr[] = {1, 2, 3, 3, 4, 1};
     int arrLength = sizeof(arr) / sizeof(arr[0]);
     bubleSort(arr, arrLength);
     printArray(arr, arrLength);
@@ -16,26 +16,20 @@ int main(void)
 void bubleSort(int array[], int size)
 {
 
-    bool listSorted = false;
+    bool changed;
 
-    while (!listSorted)
+    do
     {
-        int swappCount = 0;
+        changed = false;
         for (int i = 0; i < size - 1; i++)
         {
             if (array[i] > array[i + 1])
             {
                 swap(&array[i], &array[i + 1]);
-                swappCount = swappCount + 1;
+                changed = true;
             }
         }
-        if (swappCount == 0)
-        {
-            listSorted = true;
-            printf("List Sorted \n");
-        }
-        size--;
-    }
+    } while (changed);
 }
 void swap(int *a, int *b)
 {

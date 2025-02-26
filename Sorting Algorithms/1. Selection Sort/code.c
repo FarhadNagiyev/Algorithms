@@ -6,7 +6,7 @@ void printArray(int array[], int size);
 
 int main(void)
 {
-    int arr[] = {1, 7, 3, 6, 5};
+    int arr[] = {1, 7, 3, 6, 1};
     int arrLength = sizeof(arr) / sizeof(arr[0]);
     selectionSort(arr, arrLength);
     printf("Sorted array in Acsending Order:\n");
