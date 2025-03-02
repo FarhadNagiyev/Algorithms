@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-void bongoSort(int array[], int arrayLength);
+void bogoSort(int array[], int arrayLength);
 void shuffle(int array[], int arrayLength);
 int isSorted(int array[], int n);
 void printArray(int array[], int size);
@@ -13,12 +13,12 @@ int main(void)
     srand(time(NULL));
     printf("Given array is: \n");
     printArray(arr, arrLength);
-    bongoSort(arr, arrLength);
+    bogoSort(arr, arrLength);
     printf("sorted array is: \n");
     printArray(arr, arrLength);
 }
 
-void bongoSort(int array[], int arrayLength)
+void bogoSort(int array[], int arrayLength)
 {
     do
     {
