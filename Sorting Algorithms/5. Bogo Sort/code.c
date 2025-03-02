@@ -3,6 +3,7 @@
 #include <time.h>
 void bogoSort(int array[], int arrayLength);
 void shuffle(int array[], int arrayLength);
+void swap(int *a, int *b);
 int isSorted(int array[], int n);
 void printArray(int array[], int size);
 
@@ -32,18 +33,20 @@ void bogoSort(int array[], int arrayLength)
 
 void shuffle(int array[], int arrayLength)
 {
-
-    int newIndex, temp;
-
-    for (int i = 0; i < arrayLength - 1; i++)
+    for (int i = arrayLength - 1; i > 0; i--)
     {
-        newIndex = rand() % arrayLength;
-        temp = array[i];
-        array[i] = array[newIndex];
-        array[newIndex] = temp;
+        int j = rand() % (i + 1);
+
+        swap(&array[i], &array[j]);
     }
 }
 
+void swap(int *a, int *b)
+{
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
 int isSorted(int array[], int n)
 {
     while (--n >= 1)
