@@ -12,8 +12,8 @@ Bucket Sort (Vedrə Çeşidləmə) sıralama alqoritmi olub, verilmiş dəyərl�
 Bucket Sort-un mürəkkəblik səviyyəsi üç fərqli halda dəyişir:
 
 ### **Time Complexity (Vaxt Mürəkkəbliyi):**
-- **Ən yaxşı hal (`O(n + k)`)** - Elementlər bərabər bölünərsə və hər bucket-in içindəki element sayı azdırsa.
-- **Orta hal (`O(n + k)`)** - Elementlər bucket-lərə kifayət qədər balanslı bölünərsə.
+- **Ən yaxşı hal (`Ω(n + k)`)** - Elementlər bərabər bölünərsə və hər bucket-in içindəki element sayı azdırsa.
+- **Orta hal (`Θ(n + k)`)** - Elementlər bucket-lərə kifayət qədər balanslı bölünərsə.
 - **Ən pis hal (`O(n^2)`)** - Bütün elementlər eyni bucket-ə düşərsə, məsələn, hamısı eyni və ya çox yaxın dəyərlərdədirsə.
 
 Burada `n` girişdəki elementlərin sayı, `k` isə bucket-lərin sayıdır.

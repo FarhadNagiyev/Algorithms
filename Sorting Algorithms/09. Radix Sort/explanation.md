@@ -12,8 +12,8 @@
 
 ## Time Complexity (Vaxt Mürəkkəbliyi)
 - **Ən pis hal**: \(O(d \cdot (n + k))\)
-- **Orta hal**: \(O(d \cdot (n + k))\)
-- **Ən yaxşı hal**: \(O(d \cdot (n + k))\)
+- **Orta hal**: \(\Theta(d \cdot (n + k))\)
+- **Ən yaxşı hal**: \(\Omega(d \cdot (n + k))\)
   
 Burada:
 - \(n\) — verilən siyahının elementlərinin sayı,
@@ -42,5 +42,4 @@ Burada:
 - **Poçt kodlarının sıralanması**: Əsasən sabit uzunluqlu nömrələri sıralamaq üçün effektivdir.
 - **Telefon nömrələrinin sıralanması**: Böyük verilən bazalarında unikal identifikatorları sıralamaq üçün istifadə edilə bilər.
 - **Bank əməliyyatlarında müştəri kodlarının sıralanması**: Xüsusilə eyni kodlu müştəriləri stabil şəkildə sıralamaq üçün uyğundur.
-
 
