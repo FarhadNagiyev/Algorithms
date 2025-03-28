@@ -1,17 +1,5 @@
 # **Selection Sort Algoritmi**
 
-## **1. Algoritmin İşləmə Qaydası**
-Selection Sort (Seçmə Çeşidləmə) sadə, lakin effektiv sıralama alqoritmidir. O, massivdəki ən kiçik elementi tapıb ilk yerə qoymaqla işləyir. Addım-addım işləmə prinsipi:
-
-1. **Massivin ilk elementi seçilir.**
-2. **Massivin qalan hissəsində ən kiçik element tapılır.**
-3. **Bu element ilk seçilən elementlə yer dəyişdirilir.**
-4. **Növbəti element üçün eyni proses təkrarlanır.**
-5. **Bütün elementlər sıralanana qədər bu addımlar davam edir.**
-
-## **2. Komplekslik Təhlili**
-Selection Sort-un mürəkkəblik səviyyəsi aşağıdakı kimidir:
-
 ### **Time Complexity (Vaxt Mürəkkəbliyi):**
 - **Ən yaxşı hal (`Ω(n^2)`)** – Elementlər artıq sıralanmış olsa belə, bütün müqayisələr aparılır.
 - **Orta hal (`Θ(n^2)`)** – Massivin elementləri təsadüfi düzülmüşdür.
@@ -19,7 +7,13 @@ Selection Sort-un mürəkkəblik səviyyəsi aşağıdakı kimidir:
 
 ### **Space Complexity (Yaddaş Mürəkkəbliyi):**
 - **Əlavə yaddaş tələbi:** `O(1)` – Yalnız bir neçə əlavə dəyişən istifadə edir və yerində (in-place) sıralama aparır.
-
+  
+1. **Massivin ilk elementi seçilir.**
+2. **Massivin qalan hissəsində ən kiçik element tapılır.**
+3. **Bu element ilk seçilən elementlə yer dəyişdirilir.**
+4. **Növbəti element üçün eyni proses təkrarlanır.**
+5. **Bütün elementlər sıralanana qədər bu addımlar davam edir.**
+6. 
 ## **3. Üstünlükləri və Çatışmazlıqları**
 ✅ **Üstünlüklər:**
 - **Sadə və asan başa düşüləndir.**
@@ -37,5 +31,4 @@ Selection Sort aşağıdakı sahələrdə istifadə olunur:
 - **Yaddaş məhdudiyyətləri olan sistemlərdə** – Əlavə yaddaş istifadə etmədiyi üçün istifadə olunur.
 - **Tədris və akademik məqsədlər** – Sıralama alqoritmlərinin öyrədilməsində əsas nümunələrdən biridir.
 
-Bu alqoritm kiçik verilənlər üçün effektiv olsa da, böyük verilənlər üçün Quick Sort və Merge Sort kimi daha güclü alqoritmlər daha üstün hesab olunur.
 
